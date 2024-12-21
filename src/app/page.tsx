@@ -1,7 +1,19 @@
-export default function Home() {
+import Banner from "@/components/layout/Banner";
+import SearchForm from "@/components/layout/SearchForm/SearchForm";
+
+export default async function Home({
+  searchParams,
+}: {
+  searchParams?: Promise<{ query: string }>;
+}) {
+  const query = (await searchParams)?.query;
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      Hellow World
-    </div>
+    <main className="">
+      <Banner
+        title="Leave Your Mark!"
+        subtitle={`"Check-in" like never before! Add your signature to places around the world.`}
+      />
+      <SearchForm query={query} />
+    </main>
   );
 }
