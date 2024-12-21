@@ -34,7 +34,7 @@ To customize team, fonts, and add class order formatting.
 
 
 
-## **Step 2: [Config Shadcn]**
+## **Step 3: [Config Shadcn]**
 
 ### **Objective:**
 
@@ -45,6 +45,15 @@ Help you find bugs that you may have not found before.
 1. Install the CLI `npx shadcn@latest init`
 2. Add Header, Heading, Cover Components
 3. Add Search Form with searchParams and query
+
+## **Step 4: [Add Heading & Card Components]**
+
+### **Instructions:**
+
+1. Create Heading Component
+2. Create Search Component
+3. Create Cards Component
+
 
 <!-- 
 ---

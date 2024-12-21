@@ -81,11 +81,11 @@ body {
   justify-content: center;
   pointer-events: none;
 }
-.banner:before {
+.banner::before {
   background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fff 100%);
   position: absolute;
   content: "";
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 100%;
   top: 0;
