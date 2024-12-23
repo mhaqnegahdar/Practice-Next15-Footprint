@@ -10,7 +10,7 @@ const posts = [
       year: "numeric",
     }),
     views: 55,
-    author: { _id: 1, name: "Ali", imgUrl: "link" },
+    author: { _id: 1, name: "Ali", imgUrl: "https://images.unsplash.com/photo-1732647169576-49abfdef3348?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" },
     description: "This is a description",
     image:
       "https://images.unsplash.com/photo-1732647169576-49abfdef3348?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",

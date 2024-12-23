@@ -4,18 +4,16 @@
 
 - Some changes in package.json to make sure we use the latest versions
 
-## **Step 1: [Authenticatoin]**
+## **Step 1: [Authenticatoin & Prisma]**
 
 ### **Objective:**
 
 To Add Authentication to the code.
 
 ### **Instructions:**
+* Do the [setup](https://medium.com/@imrabin1998/implement-oauth-for-next-js-14-with-auth-js-and-prisma-3e2acf84b612)
 
-1. Install NextAuth packages `npm install next-auth@beta`
-2. Do the [setup](https://authjs.dev/getting-started/installation?framework=Next.js)
-3. Add a provider
-4. Add Navbar and Header with Auth functionality 1:26
+
 
 ## **Step 2: [Config Tailwind]**
 

@@ -1,0 +1,94 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table User {
+  id String [pk]
+  name String
+  email String [unique, not null]
+  emailVerified DateTime
+  image String
+  accounts Account [not null]
+  sessions Session [not null]
+  Authenticator Authenticator [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Footprint Footprint [not null]
+}
+
+Table Account {
+  userId String [not null]
+  type String [not null]
+  provider String [not null]
+  providerAccountId String [not null]
+  refresh_token String
+  access_token String
+  expires_at Int
+  token_type String
+  scope String
+  id_token String
+  session_state String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  user User [not null]
+
+  indexes {
+    (provider, providerAccountId) [pk]
+  }
+}
+
+Table Session {
+  sessionToken String [unique, not null]
+  userId String [not null]
+  expires DateTime [not null]
+  user User [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+}
+
+Table VerificationToken {
+  identifier String [not null]
+  token String [not null]
+  expires DateTime [not null]
+
+  indexes {
+    (identifier, token) [pk]
+  }
+}
+
+Table Authenticator {
+  credentialID String [unique, not null]
+  userId String [not null]
+  providerAccountId String [not null]
+  credentialPublicKey String [not null]
+  counter Int [not null]
+  credentialDeviceType String [not null]
+  credentialBackedUp Boolean [not null]
+  transports String
+  user User [not null]
+
+  indexes {
+    (userId, credentialID) [pk]
+  }
+}
+
+Table Footprint {
+  id String [unique, not null]
+  userId String [not null]
+  views Int [not null]
+  image String [not null]
+  category String [not null]
+  title String [not null]
+  description String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  user User [not null]
+}
+
+Ref: Account.userId > User.id [delete: Cascade]
+
+Ref: Session.userId > User.id [delete: Cascade]
+
+Ref: Authenticator.userId > User.id [delete: Cascade]
+
+Ref: Footprint.userId > User.id [delete: Cascade]
