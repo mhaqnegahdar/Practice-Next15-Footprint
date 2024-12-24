@@ -22,7 +22,7 @@ const PostCard = ({ post }: { post: postsType }) => {
   } = post;
 
   return (
-    <article className="group z-10 cursor-pointer space-y-4 rounded-xl border bg-white p-3">
+    <article className="group z-10 cursor-pointer space-y-4 rounded-xl border bg-card p-3">
       {/* Images & Actions */}
       <figure className="relative aspect-square rounded-xl bg-gray-100">
         <Image
@@ -35,7 +35,7 @@ const PostCard = ({ post }: { post: postsType }) => {
           <div className="flex justify-center gap-x-6">
             <Link
               href="/"
-              className={`items-center justify-center rounded-full border bg-white p-2 text-gray-600 shadow-md transition hover:scale-110`}
+              className={`items-center justify-center rounded-full border bg-background p-2 text-gray-600 shadow-md transition hover:scale-110`}
             >
               <div className="flex gap-1">
                 {" "}
@@ -44,7 +44,7 @@ const PostCard = ({ post }: { post: postsType }) => {
             </Link>
             <Link
               href="/"
-              className={`items-center justify-center rounded-full border bg-white p-2 text-gray-600 shadow-md transition hover:scale-110`}
+              className={`items-center justify-center rounded-full border bg-background p-2 text-gray-600 shadow-md transition hover:scale-110`}
             >
               <div className="flex gap-1"> Details</div>
             </Link>

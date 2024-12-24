@@ -10,7 +10,7 @@ const SearchForm = ({ query }: { query?: string }) => {
     <Form
       action={"/"}
       scroll={false}
-      className="mx-auto max-w-[90%] search-form flex-center peer relative z-10 block w-full lg:max-w-5xl rounded-md border border-gray-200 bg-white py-2.5 pl-5 text-sm font-medium shadow-lg focus:border-black focus:outline-none focus:ring-0"
+      className="mx-auto max-w-[90%] search-form flex-center peer relative z-10 block w-full lg:max-w-5xl rounded-md border border-gray-200 bg-input py-2.5 pl-5 text-sm font-medium shadow-lg focus:border-black focus:outline-none focus:ring-0"
     >
       <div className="flex w-full items-center px-2.5 py-1.5 focus-within:border-blue-500">
         {/* <SearchIcon className="mr-2.5 h-4 w-4" /> */}

@@ -25,7 +25,7 @@ const Posts = ({ query }: { query: string | undefined }) => {
   return (
     <section className="mx-auto w-full max-w-screen-lg px-3 py-10 lg:px-4 xl:px-0">
       <h3 className="relative z-20 mb-8 mt-10 w-full text-3xl font-bold">
-        {query ? `Search Result For ${query} ` : `All Footprints`}
+        {query ? `Search Result For "${query}" ` : `All Footprints`}
       </h3>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {posts.map((post) => (

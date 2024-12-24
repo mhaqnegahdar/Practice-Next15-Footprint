@@ -52,6 +52,16 @@ Help you find bugs that you may have not found before.
 2. Create Search Component
 3. Create Cards Component
 
+## **Step 5: [Add Dark Mode]**
+
+### **Instructions:**
+
+1. Install next-themes
+2. Added dark classes
+3. Created Theme Provider
+4. Wrapt the app with ThemeProvider
+5. Created a Theme Toggle
+
 
 <!-- 
 ---
