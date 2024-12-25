@@ -4,11 +4,7 @@ import PostCard from "./PostCard";
 const posts = [
   {
     _id: 1,
-    _createdAt: new Date().toLocaleDateString("en-US", {
-      month: "long",
-      day: "numeric",
-      year: "numeric",
-    }),
+    _createdAt: "December 25, 2024",
     views: 55,
     author: { _id: 1, name: "Ali", imgUrl: "https://images.unsplash.com/photo-1732647169576-49abfdef3348?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" },
     description: "This is a description",
