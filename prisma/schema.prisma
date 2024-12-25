@@ -5,8 +5,9 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  // directUrl = env("DIRECT_URL")
 }
 
 generator client {
@@ -18,7 +19,6 @@ generator client {
 generator dbml {
   provider = "prisma-dbml-generator"
 }
-
 
 model User {
   id            String          @id @default(cuid())
